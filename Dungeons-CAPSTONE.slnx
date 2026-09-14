@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Dungeons-CAPSTONE/Dungeons-CAPSTONE.vcxproj" Id="858c2ca9-956e-4e20-a978-2db1b599c12d" />
+</Solution>
