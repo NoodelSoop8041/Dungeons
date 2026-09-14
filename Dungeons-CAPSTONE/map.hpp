@@ -1,18 +1,21 @@
 #pragma once
-#include <string>
+#include "room.hpp"
+#include <vector>
 
 
 class Map {
 
+
+private:
+	std::vector<Room> rooms;
+	Room* startingRoom;
+
 public:
 
 	Map();
-	~Map();
 
-	void setRoomType(const std::string& roomType);
-	void setLoot(const std::string& roomType);
+	void createMap();
 
-private:
-	std::string roomType;
+	Room* getStartingRoom(); 
 
 };
