@@ -149,11 +149,13 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
+    <ClCompile Include="room.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="character.hpp" />
     <ClInclude Include="game.hpp" />
     <ClInclude Include="map.hpp" />
+    <ClInclude Include="room.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,18 +1,18 @@
 #pragma once
 #include "character.hpp"
 #include "map.hpp"
+#include  <iostream>
 
 
 class Game {
 
 private:
     Character player;
-    //Map map;
+    Map map;
 
 public:
 
     Game();
-    ~Game();
 
     void run();
 

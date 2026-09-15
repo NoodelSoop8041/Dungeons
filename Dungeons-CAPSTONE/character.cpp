@@ -1,6 +1,5 @@
 #include "character.hpp"
 #include <iostream>
-using namespace std;
 
 // Functions of the dungeons:
 // 1. Character creation (includes weapons and stats)
@@ -22,16 +21,12 @@ Character::Character() {
     experience = 0;
     level = 1;
     inventory = {};
+    currentRoom = nullptr;
 
 }
 
-Character::~Character() {
-    // Destructor logic if needed   
-}  
 
-void Character::moveChar(const std::string& direction) {
-
-};
+void Character::moveChar(const std::string& direction) {};
 
 void Character::inspectRoom() {};
 
@@ -44,3 +39,9 @@ void Character::useItem(const std::string& item) {};
 void Character::viewStats() {};
 
 void Character::viewMap() {};
+
+void Character::setCurrentRoom(Room* room) {
+    currentRoom = room;
+};
+
+Room* Character::getCurrentRoom() const { return currentRoom; };

@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 
+class Room;
 
 class Character {
 
@@ -10,22 +11,18 @@ class Character {
         // Constructor
         Character();
 
-        // Destructor
-        ~Character();
 
         void moveChar(const std::string& direction);
 
         void inspectRoom();
-
         void attack();
-
         void pickUpItem(const std::string& item);
-
         void useItem(const std::string& item);
-
         void viewStats();
-
         void viewMap();
+
+        void setCurrentRoom(Room* room);
+        Room* getCurrentRoom() const;
 
     private:
 
@@ -40,4 +37,5 @@ class Character {
         std::vector<std::string> inventory;
         std::vector<std::string> lootTable;
 
+		Room* currentRoom;
 };

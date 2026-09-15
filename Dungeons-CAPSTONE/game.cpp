@@ -3,11 +3,7 @@
 
 
 Game::Game() {
-
-};
-
-Game::~Game() {
-
+    player.setCurrentRoom(map.getStartingRoom());
 };
 
 void Game::run() {
